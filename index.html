@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillSwap - Trade Skills, Not Money</title>
+    <link rel="stylesheet" href="CSS/skillSwap_style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo">SkillSwap</a>
+
+        <ul class="menu">
+          <li class="menu-item"><a href="index.html">Explore</a></li>
+          <li class="menu-item"><a href="Includes/MyJobs.html">My Jobs</a></li>
+          <li class="menu-item"><a href="Includes/MyCredits.html">My Credits</a></li>
+        </ul>
+
+        <div class="profile">
+          <a href="Includes/SignUp.html" class="profile-icon">TN</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero-video">
+      <video class="bg-video" autoplay muted loop playsinline>
+        <source src="images/video3.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="hero-overlay">
+        <h1>Trade Skills. Not Money.</h1>
+        <h2>Welcome to SkillSwap</h2>
+        <p>Your marketplace for exchanging services using credits.</p>
+
+        <div class="hero-buttons">
+          <a href="Includes/PostJob.html" class="btn btn-primary">Post a Job +</a>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <!-- Filters Section -->
+      <section class="browse-section">
+        <nav class="filter-nav">
+          <ul>
+            <li><a href="#" class="active">All</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Fixing</a></li>
+            <li><a href="#">IT</a></li>
+            <li><a href="#">Writing</a></li>
+            <li>
+              <form class="search-form">
+                <input type="text" placeholder="🔍 Search jobs..." />
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <!-- Job Listings Section -->
+      <section class="job-listings">
+        <article class="job-card">
+          <div class="job-image">
+            <img src="images/logo_design.jpeg" alt="Logo Design" />
+          </div>
+
+          <div class="job-content">
+            <h3 class="job-title">Logo Design</h3>
+            <p class="job-meta">Category: Design</p>
+            <p class="job-credits">40 Credits</p>
+          </div>
+          <div class="view-job"><a href="#" class="job-link">View Job</a></div>
+        </article>
+
+        <article class="job-card">
+          <div class="job-image">
+            <img src="images/fix_sink.jpeg" alt="Fix Sink" />
+          </div>
+
+          <div class="job-content">
+            <h3 class="job-title">Fix Sink</h3>
+            <p class="job-meta">Category: Fixing</p>
+            <p class="job-credits">65 Credits</p>
+          </div>
+          <div class="view-job"><a href="#" class="job-link">View Job</a></div>
+        </article>
+
+        <article class="job-card">
+          <div class="job-image">
+            <img src="images/setting_router.jpeg" alt="Setting Up Router" />
+          </div>
+
+          <div class="job-content">
+            <h3 class="job-title">Setting Up Router</h3>
+            <p class="job-meta">Category: IT</p>
+            <p class="job-credits">30 Credits</p>
+          </div>
+          <div class="view-job"><a href="#" class="job-link">View Job</a></div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <nav class="footer-nav">
+        <a href="#">About</a>
+        <a href="#">How it works</a>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+      </nav>
+
+      <p class="footer-copy">© SkillSwap 2025</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="JS/main.js"></script>
+  </body>
+</html>

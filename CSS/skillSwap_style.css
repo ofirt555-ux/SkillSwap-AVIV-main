@@ -1,0 +1,1658 @@
+/* ===== Background Style ================================================================================================= */
+body {
+  background-color: rgb(14, 15, 17);
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Header ========================================================================================================== */
+header {
+  background-color: #00000079;
+  min-height: 50px;
+  padding: 30px 40px;
+  position: relative;
+  z-index: 10;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.profile {
+  margin-left: auto;
+}
+
+.logo {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+.logo:hover {
+  color: rgb(160, 158, 158);
+}
+
+/* ===== Header Menu ================================================================================================= */
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  margin: 5px 1px;
+}
+
+.menu-item a {
+  background-color: #413f3f;
+  color: #f8f1f1;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  text-decoration: none;
+}
+
+.menu-item a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ===== Profile Icon ================================================================================================= */
+.profile-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #413f3f;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+.profile-icon:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ===== Main ================================================================================================= */
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+.hero-video {
+  position: relative;
+  height: 520px;
+  border-radius: 0;
+  overflow: hidden;
+  margin: 0 0 60px 0;
+}
+
+.bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-video::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 70px;
+  color: #fff;
+}
+
+.hero-overlay h1 {
+  margin: 0 0 20px 0;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 3px;
+  font-family: "BBH Bartle", sans-serif;
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+.hero-overlay h2 {
+  margin: 0 0 20px 0;
+  font-size: 28px;
+  font-weight: 300;
+  font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+.hero-overlay p {
+  margin: 0 0 50px 0;
+  font-size: 18px;
+  line-height: 1.5;
+  opacity: 0.85;
+  font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+.btn {
+  display: inline-block;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.btn-primary {
+  background-color: #413f3f;
+  color: #f8f1f1;
+  border: 2px solid #fff;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+.btn-primary:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== BROWSE JOBS SECTION ================================================================================================= */
+.browse-section {
+  padding: 5px;
+  border-radius: 16px;
+  font-size: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.filter-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  padding: 0;
+  margin: 0 0 25px 0;
+  flex-wrap: wrap;
+}
+
+.filter-nav li a {
+  display: block;
+  padding: 10px 24px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 300;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+.filter-nav li a:hover {
+  background-color: grey;
+  color: white;
+}
+
+.filter-nav li a.active {
+  background-color: grey;
+  color: white;
+}
+
+/* ===== Search bar ================================================================================================== */
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.search-form input {
+  height: 38px;
+  padding: 0 30px;
+  width: 450px;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+  background-color: #fafafa;
+}
+
+.search-form input:focus {
+  border-color: white;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(160, 158, 158);
+}
+
+.search-form input::placeholder {
+  color: black;
+}
+
+/* ===== Job cards ================================================================================================= */
+.job-listings {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.job-card {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 24px;
+  background-color: #111;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.job-image {
+  width: 250px;
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.job-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.job-content {
+  padding-left: 10px;
+}
+
+.job-title {
+  margin: 10px 0 80px 0;
+  font-size: 34px;
+  color: #fff;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-weight: 400;
+}
+
+.job-meta {
+  margin: 30px 0 0 0;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+.job-credits {
+  margin: 10px 0 0 0;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+.job-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+.view-job {
+  margin-left: auto;
+  margin-top: auto;
+}
+
+.job-link:hover {
+  background: rgba(255, 255, 255, 0.75);
+  color: white;
+}
+
+/* ===== FOOTER ================================================================================================= */
+footer {
+  background-color: #0f0f0f;
+  color: #aaa;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  border-top: 1px solid #222;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.footer-nav a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+.footer-nav a:hover {
+  color: #ffffff;
+}
+
+.footer-copy {
+  font-size: 15px;
+  margin: 0;
+  text-align: center;
+  font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+/* ===== Mobile Responsive ================================================================================================= */
+@media (max-width: 768px) {
+  header {
+    padding: 16px;
+  }
+
+  header nav {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .logo {
+    order: 1;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .menu {
+    order: 2;
+    flex: 1;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .menu-item a {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .profile {
+    order: 3;
+    margin-left: 0;
+  }
+
+  .profile-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 14px;
+  }
+
+  .hero-video {
+    height: 420px;
+  }
+
+  .hero-overlay {
+    padding: 0 18px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-overlay h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 1.1;
+  }
+
+  .hero-overlay h2 {
+    font-size: 22px;
+  }
+
+  .hero-overlay p {
+    font-size: 15px;
+    margin-bottom: 26px;
+  }
+
+  .btn-primary {
+    padding: 12px 22px;
+    font-size: 15px;
+  }
+
+  .browse-section {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .filter-nav ul {
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .search-form {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .search-form input {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .job-listings {
+    max-width: 100%;
+  }
+
+  .job-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .job-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .job-content {
+    padding-left: 0;
+  }
+
+  .job-title {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+  }
+
+  .job-meta,
+  .job-credits {
+    font-size: 16px;
+    margin: 8px 0 0 0;
+  }
+
+  .view-job {
+    margin-left: 0;
+    margin-top: 8px;
+    width: 100%;
+  }
+
+  .job-link {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+  }
+
+  .footer-nav {
+    flex-wrap: wrap;
+  }
+
+  /* ===== My Credits page - Media Responsive ======================= */
+  .creditsheader {
+    font-size: 36px;
+    text-align: center;
+    margin: 30px 0 18px;
+  }
+
+  .credits-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    padding: 24px 18px;
+  }
+
+  .credits-summary .credinfo.divider {
+    width: 100%;
+    max-width: none;
+    display: block;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    margin: 0;
+    margin-bottom: 18px;
+    padding: 0;
+    padding-bottom: 18px;
+  }
+
+  .credits-summary .credinfo {
+    width: 100%;
+    display: block;
+  }
+
+  .credits-summary .buybtn {
+    width: 80%;
+    max-width: 320px;
+    display: block;
+    margin: 0 auto;
+    padding: 14px 16px;
+    border-radius: 12px;
+    position: static;
+    align-self: center;
+  }
+
+  .transactions-list {
+    border-radius: 16px;
+  }
+
+  .transaction {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 18px 16px;
+  }
+
+  .t-left {
+    width: 100%;
+    gap: 6px;
+  }
+
+  .t-desc {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .t-meta {
+    font-size: 14px;
+  }
+
+  .t-amount {
+    margin-left: 0;
+    font-size: 22px;
+    line-height: 1.1;
+  }
+}
+
+/* ===== My Credits page ======================================================================== */
+
+.creditsheader {
+  color: white;
+  text-align: center;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 48px;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.credits-summary {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 30px 60px;
+  border: 1.5px solid rgb(35, 34, 34);
+  background-color: rgb(15, 16, 19);
+  border-radius: 15px;
+}
+
+.credinfo {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  color: white;
+}
+
+.credinfo.divider {
+  border-right: 2px solid rgb(35, 34, 34);
+  padding-right: 40px;
+}
+
+.total-amount {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.trans-amount {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.positive {
+  color: rgb(70, 173, 70); /* ירוק */
+}
+
+.negative {
+  color: rgb(162, 13, 13); /* אדום */
+}
+
+.buybtn {
+  margin-left: auto;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 20px;
+  padding: 10px 30px;
+  border-radius: 8px;
+  font-weight: 400;
+  background: #fff;
+  color: #000;
+  width: 250px;
+}
+
+.buybtn:hover {
+  background: rgba(255, 255, 255, 0.75);
+  color: white;
+}
+
+.transactions {
+  margin-top: 80px;
+}
+
+.transactions-title {
+  color: white;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.transactions-list {
+  background-color: rgb(15, 16, 19);
+  border: 1.5px solid rgb(35, 34, 34);
+  border-radius: 16px;
+}
+
+.transaction {
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.transaction:last-child {
+  border-bottom: none;
+}
+
+.t-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.t-desc {
+  color: white;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.t-meta {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 14px;
+}
+
+.t-amount {
+  margin-left: auto;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.t-amount.positive {
+  color: rgb(90, 220, 120);
+}
+
+.t-amount.negative {
+  color: rgb(255, 90, 90);
+}
+
+/* ===== My Jobs page ======================================================================== */
+
+.myjobs-header {
+  color: white;
+  text-align: center;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 48px;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.jobs-summary {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 30px 60px;
+  border: 1.5px solid rgb(35, 34, 34);
+  background-color: rgb(15, 16, 19);
+  border-radius: 15px;
+}
+
+.jobinfo {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  color: white;
+}
+
+.jobinfo.divider {
+  border-right: 2px solid rgb(35, 34, 34);
+  padding-right: 40px;
+}
+
+.job-count {
+  font-size: 24px;
+  margin-top: 10px;
+  color: rgb(90, 220, 120);
+}
+
+.postjob-btn {
+  margin-left: auto;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 18px;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-weight: 400;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.postjob-btn:hover {
+  background: rgba(255, 255, 255, 0.75);
+  color: white;
+}
+
+/* Jobs Filter Tabs */
+.jobs-filter {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.jobs-filter-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.jobs-filter-nav li a {
+  display: block;
+  padding: 10px 24px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 300;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+.jobs-filter-nav li a:hover {
+  background-color: grey;
+  color: white;
+}
+
+.jobs-filter-nav li a.active {
+  background-color: grey;
+  color: white;
+}
+
+/* My Jobs List */
+.my-jobs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.my-job-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 24px;
+  background-color: #111;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.my-job-image {
+  width: 150px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.my-job-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.my-job-content {
+  flex: 1;
+  min-width: 200px;
+}
+
+.my-job-title {
+  margin: 0 0 12px 0;
+  font-size: 24px;
+  color: #fff;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-weight: 400;
+}
+
+.my-job-meta {
+  margin: 0 0 6px 0;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+.my-job-credits {
+  margin: 0;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+/* Job Status Section */
+.my-job-status {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  min-width: 140px;
+}
+
+.status-badge {
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+.status-open {
+  background-color: rgba(90, 220, 120, 0.2);
+  color: rgb(90, 220, 120);
+  border: 1px solid rgb(90, 220, 120);
+}
+
+.status-progress {
+  background-color: rgba(255, 193, 7, 0.2);
+  color: rgb(255, 193, 7);
+  border: 1px solid rgb(255, 193, 7);
+}
+
+.status-completed {
+  background-color: rgba(100, 149, 237, 0.2);
+  color: rgb(100, 149, 237);
+  border: 1px solid rgb(100, 149, 237);
+}
+
+.job-type-badge {
+  padding: 4px 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  font-size: 12px;
+  font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+.applicants-badge {
+  padding: 4px 12px;
+  background-color: rgba(147, 112, 219, 0.2);
+  color: rgb(147, 112, 219);
+  border-radius: 12px;
+  font-size: 12px;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  border: 1px solid rgb(147, 112, 219);
+}
+
+/* Job Actions */
+.my-job-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.action-btn {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  min-width: 140px;
+}
+
+.view-btn {
+  background: #fff;
+  color: #000;
+}
+
+.view-btn:hover {
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.edit-btn {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.edit-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.complete-btn {
+  background: rgba(90, 220, 120, 0.2);
+  color: rgb(90, 220, 120);
+  border: 1px solid rgb(90, 220, 120);
+}
+
+.complete-btn:hover {
+  background: rgba(90, 220, 120, 0.3);
+}
+
+.applicants-btn {
+  background: rgba(147, 112, 219, 0.2);
+  color: rgb(147, 112, 219);
+  border: 1px solid rgb(147, 112, 219);
+}
+
+.applicants-btn:hover {
+  background: rgba(147, 112, 219, 0.3);
+}
+
+/* ===== Post a Job page ======================================================================== */
+
+.postjob-header {
+  color: white;
+  text-align: center;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 48px;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.postjob-form-section {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.postjob-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px 60px;
+  border: 1.5px solid rgb(35, 34, 34);
+  background-color: rgb(15, 16, 19);
+  border-radius: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-label {
+  color: white;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  background-color: rgb(25, 26, 30);
+  border: 1.5px solid rgb(50, 50, 55);
+  border-radius: 10px;
+  padding: 14px 18px;
+  color: white;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.08);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.form-select option {
+  background-color: rgb(25, 26, 30);
+  color: white;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-hint {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.form-hint strong {
+  color: rgb(90, 220, 120);
+}
+
+/* Upload Area */
+.upload-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 40px 20px;
+  border: 2px dashed rgb(50, 50, 55);
+  border-radius: 12px;
+  background-color: rgb(20, 21, 25);
+  cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.upload-area:hover,
+.upload-area.drag-over {
+  border-color: rgba(255, 255, 255, 0.35);
+  background-color: rgb(25, 26, 32);
+}
+
+.upload-icon {
+  font-size: 32px;
+}
+
+.upload-text {
+  color: white;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.upload-hint {
+  color: rgba(255, 255, 255, 0.4);
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 13px;
+  margin: 0;
+}
+
+.file-input {
+  display: none;
+}
+
+.image-preview {
+  display: none;
+  margin-top: 12px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 300px;
+}
+
+.image-preview img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Form Actions */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.form-btn {
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 14px 36px;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  text-align: center;
+}
+
+.form-btn-cancel {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.form-btn-cancel:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.form-btn-submit {
+  background: #fff;
+  color: #000;
+}
+
+.form-btn-submit:hover {
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+}
+
+/* Post Job - Mobile Responsive */
+@media (max-width: 768px) {
+  .postjob-header {
+    font-size: 36px;
+    margin: 30px 0 18px;
+  }
+
+  .postjob-form {
+    padding: 24px 18px;
+    gap: 24px;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .form-btn {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 14px 16px;
+  }
+}
+
+/* My Jobs - Mobile Responsive */
+@media (max-width: 768px) {
+  .myjobs-header {
+    font-size: 36px;
+    text-align: center;
+    margin: 30px 0 18px;
+  }
+
+  .jobs-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    padding: 24px 18px;
+  }
+
+  .jobs-summary .jobinfo.divider {
+    width: 100%;
+    max-width: none;
+    display: block;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    margin: 0;
+    margin-bottom: 18px;
+    padding: 0;
+    padding-bottom: 18px;
+    text-align: center;
+  }
+
+  .jobs-summary .jobinfo {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .jobs-summary .postjob-btn {
+    width: 80%;
+    max-width: 320px;
+    display: block;
+    margin: 0 auto;
+    padding: 14px 16px;
+    border-radius: 12px;
+    text-align: center;
+  }
+
+  .jobs-filter-nav ul {
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .jobs-filter-nav li a {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .my-job-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .my-job-image {
+    width: 100%;
+    height: 180px;
+  }
+
+  .my-job-content {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .my-job-title {
+    font-size: 22px;
+  }
+
+  .my-job-status {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .my-job-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .action-btn {
+    flex: 1;
+    min-width: 120px;
+  }
+}
+
+/* ===== Sign Up / Login page ======================================================================== */
+
+.auth-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 20px 0;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 520px;
+  padding: 40px 50px;
+  border: 1.5px solid rgb(35, 34, 34);
+  background-color: rgb(15, 16, 19);
+  border-radius: 15px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Auth Tabs */
+.auth-tabs {
+  display: flex;
+  gap: 0;
+  margin-bottom: 36px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1.5px solid rgb(50, 50, 55);
+}
+
+.auth-tab {
+  flex: 1;
+  padding: 14px 0;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.5);
+  border: none;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.auth-tab:hover {
+  color: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.auth-tab.active {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+/* Auth Form */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.auth-form.hidden {
+  display: none;
+}
+
+.auth-title {
+  color: white;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+}
+
+.auth-subtitle {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  margin: -8px 0 8px 0;
+  text-align: center;
+}
+
+/* Form Row (side by side) */
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+/* Auth Options */
+.auth-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.remember-me input[type="checkbox"] {
+  accent-color: rgb(90, 220, 120);
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.forgot-link {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.forgot-link:hover {
+  color: white;
+}
+
+.terms-link {
+  color: rgb(90, 220, 120);
+  text-decoration: none;
+}
+
+.terms-link:hover {
+  text-decoration: underline;
+}
+
+/* Auth Button */
+.auth-btn {
+  width: 100%;
+  padding: 15px 0;
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.auth-btn:hover {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.auth-btn-google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: transparent;
+  color: white;
+  border: 1.5px solid rgb(50, 50, 55);
+}
+
+.auth-btn-google:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.google-icon {
+  flex-shrink: 0;
+}
+
+/* Auth Divider */
+.auth-divider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: rgb(50, 50, 55);
+}
+
+.auth-divider span {
+  color: rgba(255, 255, 255, 0.35);
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+/* Auth Success Message */
+.auth-success {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 22px;
+  background: rgba(90, 220, 120, 0.12);
+  border: 1px solid rgb(90, 220, 120);
+  border-radius: 10px;
+  animation: fadeIn 0.4s ease;
+}
+
+.auth-success.hidden {
+  display: none;
+}
+
+.success-icon {
+  font-size: 22px;
+  color: rgb(90, 220, 120);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.auth-success p {
+  margin: 0;
+  color: rgb(90, 220, 120);
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-chip {
+  cursor: pointer;
+}
+
+.skill-chip input[type="checkbox"] {
+  display: none;
+}
+
+.skill-chip span {
+  display: inline-block;
+  padding: 8px 18px;
+  background: rgb(25, 26, 30);
+  border: 1.5px solid rgb(50, 50, 55);
+  border-radius: 20px;
+  color: rgba(255, 255, 255, 0.65);
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  transition: all 0.3s ease;
+}
+
+.skill-chip span:hover {
+  border-color: rgba(255, 255, 255, 0.35);
+  color: white;
+}
+
+.skill-chip input[type="checkbox"]:checked + span {
+  background: rgba(90, 220, 120, 0.15);
+  border-color: rgb(90, 220, 120);
+  color: rgb(90, 220, 120);
+}
+
+/* Sign Up / Login - Mobile Responsive */
+@media (max-width: 768px) {
+  .auth-card {
+    padding: 30px 20px;
+    border-radius: 12px;
+  }
+
+  .auth-title {
+    font-size: 24px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .auth-options {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .skills-grid {
+    gap: 8px;
+  }
+
+  .skill-chip span {
+    padding: 7px 14px;
+    font-size: 13px;
+  }
+}
+
+/* ===== Form Validation Styles ======================================================================== */
+
+.input-error {
+  border-color: rgb(255, 90, 90) !important;
+  box-shadow: 0 0 0 3px rgba(255, 90, 90, 0.15) !important;
+}
+
+.form-error-list {
+  background: rgba(255, 90, 90, 0.1);
+  border: 1px solid rgb(255, 90, 90);
+  border-radius: 10px;
+  padding: 16px 22px;
+  animation: fadeIn 0.4s ease;
+}
+
+.form-error-list ul {
+  margin: 0;
+  padding: 0 0 0 18px;
+  list-style: disc;
+}
+
+.form-error-list li {
+  color: rgb(255, 120, 120);
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 6px;
+}
+
+.form-error-list li:last-child {
+  margin-bottom: 0;
+}
+
+.form-success-msg {
+  padding: 16px 22px;
+  background: rgba(90, 220, 120, 0.12);
+  border: 1px solid rgb(90, 220, 120);
+  border-radius: 10px;
+  color: rgb(90, 220, 120);
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  animation: fadeIn 0.4s ease;
+}

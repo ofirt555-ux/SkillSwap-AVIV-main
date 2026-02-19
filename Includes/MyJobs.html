@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillSwap - My Jobs</title>
+    <link rel="stylesheet" href="../CSS/skillSwap_style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html" class="logo">SkillSwap</a>
+
+        <ul class="menu">
+          <li class="menu-item"><a href="../index.html">Explore</a></li>
+          <li class="menu-item"><a href="MyJobs.html">My Jobs</a></li>
+          <li class="menu-item"><a href="MyCredits.html">My Credits</a></li>
+        </ul>
+        
+        <div class="profile">
+          <a href="SignUp.html" class="profile-icon">TN</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="myjobs-header">My Jobs</h1>
+
+      <!-- Jobs Summary -->
+      <section class="jobs-summary">
+        <div class="jobinfo divider">
+          Jobs Posted:
+          <div class="job-count">3</div>
+        </div>
+        <div class="jobinfo divider">
+          Jobs In Progress:
+          <div class="job-count">2</div>
+        </div>
+        <div class="jobinfo">
+          Jobs Completed:
+          <div class="job-count">5</div>
+        </div>
+        <a href="PostJob.html" class="postjob-btn">Post a Job +</a>
+      </section>
+
+      <!-- Filter Tabs -->
+      <section class="jobs-filter">
+        <nav class="jobs-filter-nav">
+          <ul>
+            <li><a href="#" class="active">All</a></li>
+            <li><a href="#">Posted by Me</a></li>
+            <li><a href="#">In Progress</a></li>
+            <li><a href="#">Completed</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <!-- Jobs List -->
+      <section class="my-jobs-list">
+        <!-- Job Item - Posted -->
+        <article class="my-job-card">
+          <div class="my-job-image">
+            <img src="../images/logo_design.jpeg" alt="Logo Design" />
+          </div>
+          <div class="my-job-content">
+            <h3 class="my-job-title">Logo Design</h3>
+            <p class="my-job-meta">Category: Design</p>
+            <p class="my-job-credits">40 Credits</p>
+          </div>
+          <div class="my-job-status">
+            <span class="status-badge status-open">Open</span>
+            <span class="job-type-badge">Posted by Me</span>
+          </div>
+          <div class="my-job-actions">
+            <a href="#" class="action-btn view-btn">View</a>
+            <a href="#" class="action-btn edit-btn">Edit</a>
+          </div>
+        </article>
+
+        <!-- Job Item - In Progress -->
+        <article class="my-job-card">
+          <div class="my-job-image">
+            <img src="../images/fix_sink.jpeg" alt="Fix Sink" />
+          </div>
+          <div class="my-job-content">
+            <h3 class="my-job-title">Fix Sink</h3>
+            <p class="my-job-meta">Category: Fixing</p>
+            <p class="my-job-credits">65 Credits</p>
+          </div>
+          <div class="my-job-status">
+            <span class="status-badge status-progress">In Progress</span>
+            <span class="job-type-badge">Working On</span>
+          </div>
+          <div class="my-job-actions">
+            <a href="#" class="action-btn view-btn">View</a>
+            <a href="#" class="action-btn complete-btn">Mark Complete</a>
+          </div>
+        </article>
+
+        <!-- Job Item - Completed -->
+        <article class="my-job-card">
+          <div class="my-job-image">
+            <img src="../images/setting_router.jpeg" alt="Setting Up Router" />
+          </div>
+          <div class="my-job-content">
+            <h3 class="my-job-title">Setting Up Router</h3>
+            <p class="my-job-meta">Category: IT</p>
+            <p class="my-job-credits">30 Credits</p>
+          </div>
+          <div class="my-job-status">
+            <span class="status-badge status-completed">Completed</span>
+            <span class="job-type-badge">Working On</span>
+          </div>
+          <div class="my-job-actions">
+            <a href="#" class="action-btn view-btn">View</a>
+          </div>
+        </article>
+
+        <!-- Job Item - Posted, has applicants -->
+        <article class="my-job-card">
+          <div class="my-job-image">
+            <img src="../images/logo_design.jpeg" alt="Website Redesign" />
+          </div>
+          <div class="my-job-content">
+            <h3 class="my-job-title">Website Redesign</h3>
+            <p class="my-job-meta">Category: Design</p>
+            <p class="my-job-credits">80 Credits</p>
+          </div>
+          <div class="my-job-status">
+            <span class="status-badge status-open">Open</span>
+            <span class="job-type-badge">Posted by Me</span>
+            <span class="applicants-badge">3 Applicants</span>
+          </div>
+          <div class="my-job-actions">
+            <a href="#" class="action-btn view-btn">View</a>
+            <a href="#" class="action-btn applicants-btn">View Applicants</a>
+          </div>
+        </article>
+
+        <!-- Job Item - Completed -->
+        <article class="my-job-card">
+          <div class="my-job-image">
+            <img src="../images/fix_sink.jpeg" alt="Shelf Installation" />
+          </div>
+          <div class="my-job-content">
+            <h3 class="my-job-title">Shelf Installation</h3>
+            <p class="my-job-meta">Category: Fixing</p>
+            <p class="my-job-credits">25 Credits</p>
+          </div>
+          <div class="my-job-status">
+            <span class="status-badge status-completed">Completed</span>
+            <span class="job-type-badge">Posted by Me</span>
+          </div>
+          <div class="my-job-actions">
+            <a href="#" class="action-btn view-btn">View</a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <nav class="footer-nav">
+        <a href="#">About</a>
+        <a href="#">How it works</a>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+      </nav>
+      <p class="footer-copy">© SkillSwap 2025</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../JS/main.js"></script>
+  </body>
+</html>

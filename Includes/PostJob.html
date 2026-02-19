@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillSwap - Post a Job</title>
+    <link rel="stylesheet" href="../CSS/skillSwap_style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html" class="logo">SkillSwap</a>
+
+        <ul class="menu">
+          <li class="menu-item"><a href="../index.html">Explore</a></li>
+          <li class="menu-item"><a href="MyJobs.html">My Jobs</a></li>
+          <li class="menu-item"><a href="MyCredits.html">My Credits</a></li>
+        </ul>
+
+        <div class="profile">
+          <a href="SignUp.html" class="profile-icon">TN</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="postjob-header">Post a Job</h1>
+
+      <section class="postjob-form-section">
+        <form class="postjob-form">
+          <!-- Job Title -->
+          <div class="form-group">
+            <label for="jobTitle" class="form-label">Job Title</label>
+            <input
+              type="text"
+              id="jobTitle"
+              class="form-input"
+              placeholder="e.g. Logo Design, Fix Sink, Setting Up Router..."
+              required
+            />
+          </div>
+
+          <!-- Category -->
+          <div class="form-group">
+            <label for="jobCategory" class="form-label">Category</label>
+            <select id="jobCategory" class="form-select" required>
+              <option value="" disabled selected>Select a category</option>
+              <option value="design">Design</option>
+              <option value="fixing">Fixing</option>
+              <option value="it">IT</option>
+              <option value="writing">Writing</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <!-- Credits -->
+          <div class="form-group">
+            <label for="jobCredits" class="form-label">Credits Offered</label>
+            <input
+              type="number"
+              id="jobCredits"
+              class="form-input"
+              placeholder="How many credits will you pay?"
+              min="1"
+              required
+            />
+            <span class="form-hint">Your current balance: <strong>110 Credits</strong></span>
+          </div>
+
+          <!-- Description -->
+          <div class="form-group">
+            <label for="jobDescription" class="form-label">Description</label>
+            <textarea
+              id="jobDescription"
+              class="form-textarea"
+              placeholder="Describe the job in detail — what needs to be done, any requirements, deadlines, etc."
+              rows="6"
+              required
+            ></textarea>
+          </div>
+
+          <!-- Upload Image -->
+          <div class="form-group">
+            <label for="jobImage" class="form-label">Upload Image</label>
+            <div class="upload-area" id="uploadArea">
+              <span class="upload-icon">📷</span>
+              <p class="upload-text">Click to upload or drag & drop</p>
+              <p class="upload-hint">JPG, PNG — max 5MB</p>
+              <input type="file" id="jobImage" class="file-input" accept="image/*" />
+            </div>
+            <div class="image-preview" id="imagePreview"></div>
+          </div>
+
+          <!-- Location -->
+          <div class="form-group">
+            <label for="jobLocation" class="form-label">Location</label>
+            <select id="jobLocation" class="form-select">
+              <option value="" disabled selected>Select location type</option>
+              <option value="remote">Remote</option>
+              <option value="onsite">On-site</option>
+            </select>
+          </div>
+
+          <!-- Deadline -->
+          <div class="form-group">
+            <label for="jobDeadline" class="form-label">Deadline</label>
+            <input type="date" id="jobDeadline" class="form-input" />
+          </div>
+
+          <!-- Submit -->
+          <div class="form-actions">
+            <a href="MyJobs.html" class="form-btn form-btn-cancel">Cancel</a>
+            <button type="submit" class="form-btn form-btn-submit">Post Job</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <nav class="footer-nav">
+        <a href="#">About</a>
+        <a href="#">How it works</a>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+      </nav>
+      <p class="footer-copy">© SkillSwap 2025</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../JS/main.js"></script>
+  </body>
+</html>

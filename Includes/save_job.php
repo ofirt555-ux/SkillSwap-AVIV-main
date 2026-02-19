@@ -11,22 +11,22 @@ $deadline    = trim($_POST["deadline"] ?? "");
 
 
 if ($title === "" || $category === "" || $credits <= 0 || $description === "" || $location === "") {
-  die("Missing required fields");
+	die("Missing required fields");
 }
 
 if ($deadline === "") {
-  $deadline = null;
+	$deadline = null;
 }
 
 
 $sql = "INSERT INTO jobs (title, category, credits, description, location, deadline)
-        VALUES (?, ?, ?, ?, ?, ?)";
+				VALUES (?, ?, ?, ?, ?, ?)";
 
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("ssisss", $title, $category, $credits, $description, $location, $deadline);
 
 if ($stmt->execute() === FALSE) {
-  die("DB error: " . $stmt->error);
+	die("DB error: " . $stmt->error);
 }
 
 header("Location: ../Includes/MyJobs.html?job=added");

@@ -1,22 +1,28 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Meta -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page Title -->
     <title>SkillSwap - My Credits</title>
+
+    <!-- Styles -->
     <link rel="stylesheet" href="../CSS/skillSwap_style.css" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
   </head>
+
   <body>
+    <!-- Header / Navigation -->
     <header>
       <nav>
         <a href="../index.html" class="logo">SkillSwap</a>
@@ -27,19 +33,25 @@
           <li class="menu-item"><a href="MyCredits.html">My Credits</a></li>
         </ul>
 
+        <!-- Profile shortcut (placeholder initials) -->
         <div class="profile">
-          <a href="SignUp.html" class="profile-icon">TN</a>
+          <a href="SignUp.html" class="profile-icon">👤</a>
         </div>
       </nav>
     </header>
 
     <main>
+      <!-- Page Title -->
       <h1 class="creditsheader">My Credits</h1>
+
+      <!-- Credits Summary -->
       <section class="credits-summary">
         <div class="credinfo divider">
           Total Credits:
+          <!-- Updated dynamically (optional) -->
           <div id="totalAmount" class="total-amount">0</div>
         </div>
+
         <div class="credinfo">
           Transactions within the last 30 days:
           <div class="trans-amount">
@@ -47,12 +59,17 @@
             <span class="negative">-20</span>
           </div>
         </div>
-        <button class="buybtn">buy credits</button>
+
+        <!-- CTA -->
+        <button class="buybtn" type="button">Buy Credits</button>
       </section>
 
+      <!-- Transactions List -->
       <section class="transactions">
         <h2 class="transactions-title">Transactions</h2>
+
         <div class="transactions-list">
+          <!-- Transaction item -->
           <div class="transaction">
             <div class="t-left">
               <div class="t-desc">Logo Design</div>
@@ -112,6 +129,7 @@
       </section>
     </main>
 
+    <!-- Footer -->
     <footer>
       <nav class="footer-nav">
         <a href="#">About</a>
@@ -123,6 +141,7 @@
       <p class="footer-copy">© SkillSwap 2025</p>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="../JS/main.js"></script>
   </body>

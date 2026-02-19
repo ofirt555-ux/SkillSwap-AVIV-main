@@ -44,6 +44,7 @@
             <input
               type="text"
               id="jobTitle"
+              name="title"
               class="form-input"
               placeholder="e.g. Logo Design, Fix Sink, Setting Up Router..."
               required
@@ -53,7 +54,7 @@
           <!-- Category -->
           <div class="form-group">
             <label for="jobCategory" class="form-label">Category</label>
-            <select id="jobCategory" class="form-select" required>
+            <select id="jobCategory" name="category" class="form-select" required>
               <option value="" disabled selected>Select a category</option>
               <option value="design">Design</option>
               <option value="fixing">Fixing</option>
@@ -69,6 +70,7 @@
             <input
               type="number"
               id="jobCredits"
+              name="credits"
               class="form-input"
               placeholder="How many credits will you pay?"
               min="1"
@@ -82,6 +84,7 @@
             <label for="jobDescription" class="form-label">Description</label>
             <textarea
               id="jobDescription"
+              name="description"
               class="form-textarea"
               placeholder="Describe the job in detail — what needs to be done, any requirements, deadlines, etc."
               rows="6"
@@ -104,7 +107,7 @@
           <!-- Location -->
           <div class="form-group">
             <label for="jobLocation" class="form-label">Location</label>
-            <select id="jobLocation" class="form-select">
+            <select id="jobLocation" class="form-select" name="location" required>
               <option value="" disabled selected>Select location type</option>
               <option value="remote">Remote</option>
               <option value="onsite">On-site</option>
@@ -114,7 +117,7 @@
           <!-- Deadline -->
           <div class="form-group">
             <label for="jobDeadline" class="form-label">Deadline</label>
-            <input type="date" id="jobDeadline" class="form-input" />
+            <input type="date" id="jobDeadline" name="deadline" class="form-input" />
           </div>
 
           <!-- Submit -->

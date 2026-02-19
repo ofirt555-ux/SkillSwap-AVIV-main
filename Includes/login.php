@@ -20,12 +20,12 @@ $stmt->execute();
 $res = $stmt->get_result();
 
 if ($res && $res->num_rows === 1) {
-	// הצלחה - כרגע בלי SESSION, רק מפנים
+
 	header("Location: ../index.html?login=success");
 	exit();
 }
 
-// כישלון - מחזירים לעמוד עם פרמטר
+
 header("Location: ../Includes/SignUp.html?login=fail");
 exit();
 ?>

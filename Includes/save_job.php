@@ -29,6 +29,6 @@ if ($stmt->execute() === FALSE) {
 	die("DB error: " . $stmt->error);
 }
 
-header("Location: ../Includes/MyJobs.html?job=added");
+header("Location: MyJobs.html?job=added");
 exit();
 ?>
